@@ -2,21 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MLB HR Prediction Engine</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>2026 HR Prediction Engine</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f9; padding: 20px; }
+        .dashboard { max-width: 600px; margin: auto; }
+        .card { background: white; border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 2px 2px 5px #ccc; }
+        .high { color: #2e7d32; font-weight: bold; }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">⚾ HR Prediction Engine</h1>
-        <p class="text-center text-muted">Real-time data for June 20, 2026</p>
-        <table class="table table-hover mt-4">
-            <thead class="thead-dark">
-                <tr><th>Player</th><th>Matchup</th><th>Tier</th><th>HR Prob (%)</th><th>EV Edge</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Yordan Alvarez</td><td>CLE @ HOU</td><td>🔥 Elite</td><td>32%</td><td>+8%</td></tr>
-            </tbody>
-        </table>
+    <div class="dashboard">
+        <h1>HR Prediction Engine</h1>
+        <p>Date: June 20, 2026</p>
+        
+        <div class="card">
+            <h3>Kyle Schwarber (PHI)</h3>
+            <p>Target: <span class="high">High Probability</span></p>
+            <p>Logic: Elite Barrel% + Hitter-friendly environment</p>
+        </div>
+
+        <div class="card">
+            <h3>Byron Buxton (MIN)</h3>
+            <p>Target: <span class="high">High Probability</span></p>
+            <p>Logic: Pitcher HR/9 regression target</p>
+        </div>
     </div>
 </body>
 </html>
